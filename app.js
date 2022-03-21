@@ -72,5 +72,6 @@ surprised. “You told me that don't cross the street before the ${userInputs[5]
 for the ${userInputs[5]} to pass first. Therefore I cannot cross this street “replied ${userInputs[4]}. His ${userInputs[0]} could
 only be silent</h2>`;
 
-document.write(commentedOut)
+let elementShow = document.getElementById("show");
+elementShow.innerHTML = commentedOut;
 
