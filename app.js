@@ -43,8 +43,13 @@ let questions = [
 ];
 
 for (let i = 0; i < questions.length; i++){
-    let fillInput = prompt(`${questions[i]} ...(${i+1}/7)`);   
-    userInputs.push(fillInput);
+    let fillInput = prompt(`${questions[i]} ...(${i+1}/7)`);  
+    if (fillInput === "") {
+        alert("Please fill !");
+        i--;
+    } else {
+        userInputs.push(fillInput);
+    }
 
 }
 
